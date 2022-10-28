@@ -1,8 +1,9 @@
 # SMS-Spam-Classifier
-End to End Machine Learning Project | SMS Spam Classifier | Heroku Deployment 
+
+### End to End Machine Learning Project | SMS Spam Classifier | Heroku Deployment 
 Front end - Streamlit
 
-VS CODE Steps - 
+### VS Code Steps - 
 
 >> Create a local Folder
 >> Create a Repo on github --> Add Readme.md - Select Python - Add a License
@@ -20,18 +21,24 @@ conda info --envs
 ```
 conda activate <my_env_name>
 ```
+===========================================================================
 
-Anaconda Steps - 
+### Anaconda Steps - 
 
 1. Open anaconda prompt
 2. Base environment - 
->> conda create -n <my_env_name> python=3.8.8 -y
->> activate <my_env_name>
+```
+conda create -n <my_env_name> python=3.8.8 -y
+```
+```
+conda activate <my_env_name>
+```
 3. Create a local Folder
 4. Copy the path --> cd in anaconda prompt to the path (D:\)
->> jupyter notebook
-
-===========================================================================================
+```
+ jupyter notebook
+```
+===========================================================================
 
 ### Create and Install requirements.txt
 ```
@@ -52,7 +59,7 @@ Add all the files to github -
 git add .
 ```
 
-Check status of your files
+Check status of your files -
 ```
 git status
 ```
@@ -62,20 +69,21 @@ Commit all the files to github by pushing the fies from local to  thestaging env
 git commit -m "This is my first commit includes requirement.txt and readme.md file"
 ```
 
-Or do both tthe steps together
+Or do both tthe steps together -
 ```
 git add . && git commit -m "This is my first commit"
 ```
 
-Push this to github -
+Push everything to github -
 ```
 git push origin main
 ```
+=============================================================================
 
-### Execute the Car-price-prediction.ipynb file to get 2 pickle files
-#### 1. Vectorizer.pkl 2. Model.pkl
+### Execute the sms-spam-detection.ipynb file to get 2 pickle files
+#### 1. vectorizer.pkl 2. model.pkl
 
-### Create a python file for your flask application
+### Create a python file for your streamlit application
 ```
 touch app.py
 ````
@@ -85,23 +93,23 @@ touch app.py
 streamlit run app.py
 ```
 
-========================================================================================
+=============================================================================
 
 ### Deploy to Heroku
-Create a Procfile in folder in VScode
+1. Create a Procfile in folder in VScode -
 ```
 web: gunicorn app:app
 ```
 
-If using Streamlit
+If using Streamlit -
 ```
 web: sh setup.sh && streamlit run app.py
 ```
 
-2. Create a setup.sh file andd add the code in it
+2. Create a setup.sh file -
 ps - Required for streamlit implementation
 
-3. Add nltk.txt file with the corpus names mentioned inside it
+3. Add nltk.txt file with the corpus names mentioned inside it (stopwords, punkt, wordcloud)
 ps - Required for heroku implementation
 
 4. Push final commit to github
