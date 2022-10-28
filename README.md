@@ -14,7 +14,7 @@ VS CODE Steps -
 ```
 conda create -n <my_env_name> python=3.8.8 -y
 ```
-``
+```
 conda info --envs
 ```
 ```
@@ -61,7 +61,8 @@ Commit all the files to github by pushing the fies from local to  thestaging env
 ```
 git commit -m "This is my first commit includes requirement.txt and readme.md file"
 ```
-or 
+
+Or do both tthe steps together
 ```
 git add . && git commit -m "This is my first commit"
 ```
@@ -81,8 +82,11 @@ touch app.py
 ### Use the streamlit library to make a simple front end page
 ### Execute the app.py file in vscode
 ```
-python app.py
+streamlit run app.py
 ```
+
+========================================================================================
+
 ### Deploy to Heroku
 Create a Procfile in folder in VScode
 ```
@@ -94,7 +98,13 @@ If using Streamlit
 web: sh setup.sh && streamlit run app.py
 ```
 
-1. Go to Heroku - Create an app SMS-Spam-Classifier-MM
-2. Connect the app with github repo
-3. Push final commit to gitub
-4. Deploy branch on heroku
+2. Create a setup.sh file andd add the code in it
+ps - Required for streamlit implementation
+
+3. Add nltk.txt file with the corpus names mentioned inside it
+ps - Required for heroku implementation
+
+4. Push final commit to github
+5. Go to Heroku - Create an app sms-spam-classifier-mm
+6. Connect the app with github repo
+7. Deploy branch on heroku
