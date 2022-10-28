@@ -82,12 +82,14 @@ git push origin main
 =============================================================================
 
 ### Execute the sms-spam-detection.ipynb file to get 2 pickle files
-#### 1. vectorizer.pkl 2. model.pkl
+1. vectorizer.pkl 
+2. model.pkl
 
 ### Create a python file for your streamlit application
 ```
 touch app.py
 ````
+
 ### Use the streamlit library to make a simple front end page
 ### Execute the app.py file in vscode
 ```
