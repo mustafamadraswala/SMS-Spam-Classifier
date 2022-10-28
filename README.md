@@ -1,6 +1,6 @@
 # SMS-Spam-Classifier
 
-### End to End Machine Learning Project | SMS Spam Classifier | Heroku Deployment | Front end - Streamlit
+### End to End Machine Learning Project | SMS Spam Classifier | Front-end - Streamlit | Heroku Deployment 
 
 ### VS Code Steps - 
 
